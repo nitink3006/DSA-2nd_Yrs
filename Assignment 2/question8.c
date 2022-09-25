@@ -1,21 +1,22 @@
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
+
+void update(int *a,int *b) {
+    
+    int s,d;
+    s=(*a + *b);
+    d=abs (*a - *b);
+    *a=s;
+    *b=d;
+  
+}
 
 int main() {
-	
-    int n;
-    int s=0;
-    scanf("%d", &n);
-    for (int i=1;i<=5;i++)
-    {
-        int a=n%10;
-        s =s+a;
-        n=n/10;
-    }
-            printf("%d",s);
+    int a, b;
+    int *pa = &a, *pb = &b;
     
-    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
     return 0;
 }
