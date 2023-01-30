@@ -117,7 +117,7 @@ int main(){
 
 
 
-Given array is 
+Given list is 
 12 11 13 5 6 7 
-Sorted array is 
+Sorted list is 
 5 6 7 11 12 13 
